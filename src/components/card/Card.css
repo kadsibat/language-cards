@@ -1,0 +1,36 @@
+.cards-area-container{
+    height: 41rem;
+    width: 30rem;
+    background-color: aquamarine;
+    margin: 0 auto;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: "top" "bottom";
+    overflow: hidden;
+}
+
+.bars{
+    height: 47rem;
+    width: 5rem;
+    background-color: darkgrey;
+    position: relative;
+    transform: rotate(55deg);
+    top:-40rem;
+    left:10rem;
+}
+.language-title{
+    grid-area:top;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.card-container{
+    grid-area: bottom;
+    padding: 1rem;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
